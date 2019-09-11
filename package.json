@@ -1,0 +1,22 @@
+{
+  "name": "nubank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nubank.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manoellasc/desafionubank.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manoellasc/desafionubank/issues"
+  },
+  "homepage": "https://github.com/manoellasc/desafionubank#readme",
+  "dependencies": {
+    "date-fns": "^2.1.0"
+  }
+}
