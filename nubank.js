@@ -1,10 +1,9 @@
 const differenceInMinutes = require("date-fns/differenceInMinutes");
-var fs = require("fs");
 account = {};
-//const transaction = {};
 violations = [];
 transactions = [];
 accounts = [];
+
 //JSON.parse(input - string) para transformar em objeto
 console.log("Olá digite seu input:");
 process.stdin.on("data", input => {
