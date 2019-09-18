@@ -5,7 +5,7 @@ const Account = require("/home/manoella/Desktop/Codes/nubank/account.js");
 
 function processTransaction(inputs) {
   const accountsIndex = Account.accounts.length - 1;
-  account = Account.accounts[0];
+  let account = Account.accounts[0];
   let violations = [];
   Account.account = { account, violations };
 
