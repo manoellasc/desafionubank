@@ -5,8 +5,6 @@ const Account = require("/home/manoella/Desktop/Codes/nubank/account.js");
 
 function processTransaction(inputs) {
   const accountsIndex = Account.accounts.length - 1;
-  Alength = Account.accounts.length;
-  Tlength = transactions.length;
   account = Account.accounts[0];
   let violations = [];
   Account.account = { account, violations };
@@ -28,7 +26,7 @@ function processTransaction(inputs) {
       violations.push("card-not-active");
     }
     var x = 0;
-    if (transactionIsEmpty(Tlength)) {
+    if (transactionIsEmpty(transactions)) {
       transactions.push(inputs); //armazena a transação
     } else {
       for (var j = 0; j < transactions.length; j++) {
@@ -62,12 +60,12 @@ function processTransaction(inputs) {
     }
   }
 
-  function accountIsEmpty(Alength) {
-    return Alength.length === 0;
+  function accountIsEmpty(accounts) {
+    return accounts.length === 0;
   }
 
-  function transactionIsEmpty(Tlength) {
-    return Tlength.length === 0;
+  function transactionIsEmpty(transactions) {
+    return transactions.length === 0;
   }
 
   function validateDoubledTransaction(newTransaction, oldTransaction) {
