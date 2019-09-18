@@ -7,7 +7,7 @@ const Transaction = require("/home/manoella/Desktop/Codes/nubank/transaction.js"
 // let transactions = [];
 // let accounts = [];
 //JSON.parse(input - string) para transformar em objeto
-console.log("oi");
+
 process.stdin.on("data", input => {
   let inputs = input.toString();
   inputs = JSON.parse(inputs); //transformando em objeto
